@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body {
+  height: 30000px;
+} */
+
+/* ! This is navbar that not fixed */
+.home {
+  background-color: #0d5cf0;
+  color: #fff;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding-top: 0.5rem;
+}
+
+ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+ul li:last-child {
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: rgb(22, 22, 22);
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bolder;
+  display: inline;
+}
+
+ul li a span {
+  color: #effa00;
+}
+
+ul li:nth-child(1) {
+  float: left;
+}
+
+ul li:hover a,
+ul li:hover a span {
+  color: rgb(22, 22, 22);
+}
+
+.home h1 {
+  padding-top: 3rem;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+.home h1 span {
+  color: #effa00;
+}
+
+.home p {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #fff;
+  line-height: 3;
+  word-spacing: 5px;
+  font-family: "Lexend Mega", sans-serif;
+}
+
+.home p span {
+  color: #effa00;
+}
+
+/* ! This is Nav bar that Fixed*/
+.fixed-top {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+/* ? This is carousel */
+.carousel-inner .carousel-item img {
+  height: 1190px;
+}
+.carousel-inner .carousel-item {
+  position: relative;
+}
+
+.carousel-inner .carousel-item h1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.carousel-inner .carousel-item p {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: #effa00;
+  font-weight: bolder;
+}
+
+.carousel-inner .carousel-item p span {
+  color: #fff;
+}
+
+/* *TODO This is Learning Tracks*/
+.learning {
+  background-color: #fff;
+  position: relative;
+}
+
+.learning .container h1 {
+  position: relative;
+  font-weight: bold;
+  font-family: "Yusei Magic", sans-serif;
+  color: #0d5cf0;
+  margin: 40px 0;
+}
+.learning .container h1::before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 3px;
+  background-color: #0d5cf0;
+  top: 110px;
+  left: 0px;
+}
+.learning .container h1::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #0d5cf0;
+  top: 95px;
+  left: 0px;
+}
+
+.track-box {
+  padding-top: 7rem;
+  padding: 2rem;
+  background-color: #ececec;
+  color: #0d5cf0;
+}
+.track-box a {
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 1.75rem;
+}
+.track-box a:hover {
+  color: rgb(22, 22, 22);
+}
+.track-box img {
+  width: 100px;
+  height: 100px;
+}
+
+/* ? This is section of our Features*/
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feat-box {
+  max-width: 360px;
+  color: #fff;
+  margin: 30px 0 40px;
+  text-align: center;
+}
+.feat-box img {
+  width: 96px;
+  height: 96px;
+  padding: 15px;
+}
+
+.feat-box h2 {
+  color: #0d5cf0;
+  font-size: 24px;
+  padding-top: 10px;
+  font-family: "Yusei Magic", sans-serif;
+  position: relative;
+}
+
+.feat-box h2::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 2px;
+  background-color: #0d5cf0;
+  top: 60px;
+  left: 37%;
+}
+
+.feat-box .text {
+  color: #656666;
+  padding-top: 30px;
+  line-height: 2;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.container h1 {
+  color: #0d5cf0;
+}
+
+/* ? This is lastest Topics*/
+.card-body a {
+  text-decoration: none;
+}
+
+.card-body a h5 {
+  color: #0d5cf0;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 16px;
+}
+
+.card-body p {
+  color: #656665;
+}
+/* *TODO This id footer section */
+
+.footer {
+  padding: 30px 20px;
+  background-color: #333;
+  text-align: center;
+}
+.footer .container::before {
+  display: table;
+  content: "";
+}
+
+.footer h3 {
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  margin: 0 0 10px;
+  border-bottom: 1px solid #646161;
+  padding-bottom: 15px;
+}
+
+.footer ul {
+  margin: 0;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.footer ul li::before {
+  font-family: "FontAwesome";
+  content: "\f0da";
+  color: #959382;
+  margin-right: 2px;
+}
+
+.footer ul li a {
+  color: #959595;
+  text-decoration: none;
+  font-size: 17px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #5e5e5e;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
